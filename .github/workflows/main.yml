@@ -37,6 +37,6 @@ jobs:
       - name: archive release.zip
         uses: actions/upload-artifact@v2
         with:
-          name: artifacts
+          name: release.zip
           path: release.zip
           if-no-files-found: error
