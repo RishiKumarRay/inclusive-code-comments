@@ -35,11 +35,11 @@ jobs:
         run: npx xt-test
       - name: install unzip
         run: sudo apt install unzip
-        
+      - name: unzip release.zip
+        run: unzip release.zip
       - name: archive release.zip
         uses: actions/upload-artifact@v2
         with:
           name: release.zip
-          run: unzip release.zip
           path: ./release
           if-no-files-found: error
