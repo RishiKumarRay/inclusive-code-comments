@@ -33,6 +33,8 @@ jobs:
 
       - name: run tests
         run: npx xt-test
+      - name: tonybogdanov-zip
+        uses: TonyBogdanov/zip@1.0  
       - name: install unzip
         run: sudo apt install unzip
       - name: unzip release.zip
