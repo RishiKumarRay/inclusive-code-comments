@@ -39,6 +39,5 @@ jobs:
         with:
           name: release.zip
           path: | 
-             . /
-             !release.zip
+                . / !release.zip
           if-no-files-found: error
